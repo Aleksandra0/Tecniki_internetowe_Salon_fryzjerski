@@ -1,0 +1,7 @@
+main_photo: https://pixabay.com/photos/colors-hairdresser-cutting-1097123/
+about_us_photo: https://pixabay.com/photos/colors-hairdresser-cutting-1097176/
+gallery1: https://pixabay.com/photos/colors-hairdresser-cutting-1097182/
+gallery2: https://pixabay.com/photos/colors-hairdresser-cutting-1097131/
+gallery3: https://pixabay.com/photos/pink-hair-girl-glamour-beauty-salon-4703264/
+gallery4: https://pixabay.com/photos/model-bar-sexy-fashion-dress-3431065/
+gallery5: https://pixabay.com/photos/model-red-hair-hairdresser-lip-2772893/

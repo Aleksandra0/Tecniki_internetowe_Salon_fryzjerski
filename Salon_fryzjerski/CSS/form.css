@@ -1,0 +1,79 @@
+@font-face {
+	font-family: Roboto;
+	src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+.back
+{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.inputs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.inputs_column
+{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: rgb(101,119,139);
+}
+input
+{
+    margin-left: 20px;
+    width: 200px;
+}
+select
+{
+    margin-left: 20px;
+    width: 200px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=submit]
+{
+    margin: 10px;
+}
+.invalid
+{
+    border: 1px solid red;
+}
+p
+{
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    color: rgb(101,119,139)
+}
+.warning
+{
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    color: tomato;
+}
+#result
+{
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    color:tomato;
+    margin-bottom: 5%;
+    padding: 0px;
+    margin-top: 0px;
+}

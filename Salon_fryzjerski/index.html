@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Aleksandra Borkowska"/>
+        <link rel="stylesheet" href="CSS/main_page.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <title>Salon fryzjerski Albion</title>
+        <script src="Scripts/gallery.js"></script>
+    </head>
+    <body>
+        <div class="header">
+        </div>
+        <div class="subtitle">
+            <h2> O nas </h2>
+        </div>
+        <div class="about_us"> 
+            <img class="about_us_photo" src="CSS/Images/about_us_photo.jpg" alt="Photo of a hairstyle"/>
+            <div  class="about_us_column">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ipsa velit repudiandae fuga ipsum quisquam natus corrupti modi quibusdam illum, debitis nostrum vero inventore ullam labore amet aut deleniti quia? 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam explicabo maiores deserunt molestias consectetur esse dicta, aut deleniti nihil, asperiores dolor commodi consequuntur quod architecto quis autem hic! Nostrum.
+            </p>
+            <p style="text-align: center;"> Zapraszamy do skorzystania z naszych usług! </p>
+            <button class="button"> <a href="Subpages/form.php"> Umów się na wizytę </a></button>
+            </div>
+        </div>
+        <div class="subtitle">
+            <h2> Galeria </h2>
+        </div>
+        <div class="gallery">
+            <button class="gallery_button" onclick="change_photos(0)"> < </button>
+            <img id="photo1" src="CSS/Images/gallery1.jpg" alt="photo1"/>
+            <img id="photo2" src="CSS/Images/gallery2.jpg" alt="photo2"/>
+            <img id="photo3" src="CSS/Images/gallery3.jpg" alt="photo3"/>
+            <button class="gallery_button" onclick="change_photos(1)"> > </button>
+        </div>
+        <div class="subtitle">
+            <h2> Kontakt </h2>
+        </div>
+        <div class="contact"> 
+            <p> ul. Wymyślona 46, 33-033 Kraków </p>
+            <p> tel.: 555 777 098 </p>
+            <p> email: studiofryzurAlbion@interia.pl </p>
+        </div>
+        <div class="newsletter">
+            <div>
+                <p> Salon fryzjerski Albion </p>
+            </div>
+            <button class="button_reverse"> <a href="Subpages/newsletter.php"> Zapisz się do newslettera! </a> </button>
+        </div>
+    </body>
+</html>

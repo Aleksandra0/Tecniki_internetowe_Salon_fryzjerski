@@ -1,0 +1,37 @@
+@font-face {
+	font-family: Roboto;
+	src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+p
+{
+    font-size: 16px;
+    font-family: Roboto;
+    color: rgb(101,119,139);
+    text-align: center;
+    margin-top: -30px;
+    padding-top: 0px;
+}
+.sign_up
+{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: rgb(101,119,139);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+}
+input
+{
+    margin-left: 10px;
+    width: 250px;
+    padding: 3%;
+}
+.back
+{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
