@@ -2,16 +2,16 @@ function validation()
 {
     document.getElementById("result").innerHTML = "";
 
-    let imie = document.getElementById('firstname').value;
-    let nazwisko = document.getElementById('surname').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    let date = document.getElementById('date').value;
+    let imie = document.getElementById('firstname');
+    let nazwisko = document.getElementById('surname');
+    let email = document.getElementById('email');
+    let phone = document.getElementById('phone');
+    let date = document.getElementById('date');
 
 
     let validation = 0;
-    //validation for firstname
-    if(imie.length < 2)
+    //Validation for name
+    if(imie.value.length < 2)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawne imię </p>"
@@ -22,8 +22,8 @@ function validation()
         imie.removeAttribute("class");
     }
 
-    //Validation for surname
-    if(nazwisko.length < 2)
+    ///Validation for surname
+    if(nazwisko.value.length < 2)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawne nazwisko </p>"
@@ -36,7 +36,7 @@ function validation()
 
     //Validation for email
     const reg = /^[a-zA-Z0-9](.*)@[a-zA-Z0-9](.*)\.[a-zA-Z0-9]/
-    if(reg.test(email)==false)
+    if(reg.test(email.value)==false)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawny adres email </p>"
@@ -49,9 +49,9 @@ function validation()
 
     //Validation for phone
     const reg2 = /^[0-9]{9}$/
-    phone = phone.trim();
-    phone = phone.replaceAll(" ","");
-    if(reg2.test(phone)==false)
+    phone2 = phone.value.trim();
+    phone2 = phone2.replaceAll(" ","");
+    if(reg2.test(phone2)==false)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawny numer telefonu </p>"
@@ -64,8 +64,8 @@ function validation()
 
     //Validation for date
     let today = new Date();
-    date = Date.parse(date);
-    if(date <= today)
+    date2 = Date.parse(date.value);
+    if(date2 <= today)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawną datę wizyty </p>"
