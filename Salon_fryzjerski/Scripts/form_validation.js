@@ -10,44 +10,44 @@ function validation()
 
 
     let validation = 0;
-    //Walidacja dla Imię
+    //validation for firstname
     if(imie.length < 2)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawne imię </p>"
-        document.getElementById("firstname").className = "invalid";
+        imie.className = "invalid";
     }
     else
     {
-        document.getElementById("firstname").removeAttribute("class");
+        imie.removeAttribute("class");
     }
 
-    //Walidacja dla Nazwisko
+    //Validation for surname
     if(nazwisko.length < 2)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawne nazwisko </p>"
-        document.getElementById("surname").className = "invalid";
+        nazwisko.className = "invalid";
     }
     else
     {
-        document.getElementById("surname").removeAttribute("class");
+        nazwisko.removeAttribute("class");
     }
 
-    //Walidacja dla Email
+    //Validation for email
     const reg = /^[a-zA-Z0-9](.*)@[a-zA-Z0-9](.*)\.[a-zA-Z0-9]/
     if(reg.test(email)==false)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawny adres email </p>"
-        document.getElementById("email").className = "invalid";
+        email.className = "invalid";
     }
     else
     {
-        document.getElementById("email").removeAttribute("class");
+        email.removeAttribute("class");
     }
 
-    //Walidacja dla Telefon kontaktowy
+    //Validation for phone
     const reg2 = /^[0-9]{9}$/
     phone = phone.trim();
     phone = phone.replaceAll(" ","");
@@ -55,25 +55,25 @@ function validation()
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawny numer telefonu </p>"
-        document.getElementById("phone").className = "invalid";
+        phone.className = "invalid";
     }
     else
     {
-        document.getElementById("phone").removeAttribute("class");
+        phone.removeAttribute("class");
     }
 
-    //Walidacja dla Daty
+    //Validation for date
     let today = new Date();
     date = Date.parse(date);
     if(date <= today)
     {
         validation = 1;
         document.getElementById("result").innerHTML += "<p class='warning'> Wprowadzono niepoprawną datę wizyty </p>"
-        document.getElementById("date").className = "invalid";
+        date.className = "invalid";
     }
     else
     {
-        document.getElementById("date").removeAttribute("class");
+        date.removeAttribute("class");
     }
 
     if(validation == 0)
