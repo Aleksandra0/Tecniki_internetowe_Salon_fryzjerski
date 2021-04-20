@@ -77,3 +77,8 @@ p
     padding: 0px;
     margin-top: 0px;
 }
+textarea
+{
+    margin-left: 20px;
+    width: 200px;
+}
