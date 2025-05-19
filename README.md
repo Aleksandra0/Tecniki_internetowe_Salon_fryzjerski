@@ -1,7 +1,6 @@
 ENG:
 
-Project Description:
-A website for a hair salon developed using HTML, CSS, PHP, and JavaScript.
+# Project Description: A website for a hair salon developed using HTML, CSS, PHP, and JavaScript.
 
 The homepage can be launched after placing the project in the htdocs directory by navigating to:
 http://localhost/Salon_fryzjerski/
@@ -16,7 +15,7 @@ Locations with local database connection:
 
 PL: 
 
-Opis projeku: Strona internetowa salonu fryzjerskiego wykonana przy użyciu html, css, php i javascript
+# Opis projeku: Strona internetowa salonu fryzjerskiego wykonana przy użyciu html, css, php i javascript
 
 Stronę główną po wrzuceniu do htdocs można odpalić poprzez ścieżkę:
 http://localhost/Salon_fryzjerski/
